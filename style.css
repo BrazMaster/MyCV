@@ -30,6 +30,7 @@ body {
   
   header section {
     margin: 0 auto;
+    color: white;
   }
   
   header img {
@@ -40,6 +41,12 @@ body {
   
   h1 {
     margin: 1em 0;
+    color: white;
+  }
+
+  h3 {
+      text-transform: uppercase;
+      text-decoration: underline;
   }
   
   main {
@@ -47,12 +54,28 @@ body {
   }
   
   .course {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   
   .course .title {
+    padding-top: 15px;
+    flex: 0 0 33.3%;
+    -ms-flex: 0 0 33.3%;
+    max-width: 33%;
+    color: grey;
   }
   
   .course .descrition {
+    -ms-flex: 0 0 66.6%;
+    flex: 0 0 66.6%;
+    max-width: 66.6%;
+  }
+  
+  .course .descrition p {
+    padding-left: 1em;
   }
   
   .school span {
