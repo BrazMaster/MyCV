@@ -90,12 +90,55 @@ body {
     flex: 0 0 50%;
     max-width: 50%;
   }
+
+  .skills .column ul, ul.job-description {
+    list-style-type: none;
+  }
+  
+  .skills .column ul > li:before {
+    content: "►";
+    padding-right: 0.5em;
+    color: #509e98;
+  }
+  
+  .school, .job-title {
+    text-transform: capitalize;
+  }
+  
+  .school span, .job-title span {
+    color: #889499;
+    text-decoration: underline;
+  }
+  
+  ul.job-description li:before{
+    content: "✔";
+    padding-right: 0.5em;
+    color: #509e98;
+  }
+
+  .fab {
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    margin: 5px;
+    text-align: center;
+  }
+  
+  a .fab {
+    color: white;
+  }
   
   .school span {
     color: #A7B8BF;
   }
   
   footer {
-   padding: 1em;
-  }
+    padding: 1em 1.5em;
+    background: #A7B8BF;
+    color: white;
+    text-align: center;
+   }
   
